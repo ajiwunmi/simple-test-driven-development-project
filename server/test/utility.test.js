@@ -25,6 +25,7 @@ describe('Test all utitlity function ', () => {
         const users = await getUsers();
         console.log(users);
         expect(users).toEqual(expect.any(Array));
+        expect(users.length).toBeGreaterThan(0);
     }); 
 
 });
